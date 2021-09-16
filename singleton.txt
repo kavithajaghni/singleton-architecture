@@ -1,0 +1,12 @@
+Singleton Design Pattern:
+
+When we develop a class in such a way that it can have only instance at any time, is called Singleton design pattern. It 
+is very useful when you need to use same object of a class across all classes or framework. Singleton class must return 
+the same instance again, if it is instantiated again.
+
+To create a singleton class, we need to do following steps:
+
+Declare constructor of class as private so that no one instantiate class outside of it.
+Declare a static reference variable of class. Static is needed to make it available globally.
+(declare webdriver as static so that we can make use of this object throughout the framework)
+Declare a static method with return type as object of class which should check if class is already instantiated once.
